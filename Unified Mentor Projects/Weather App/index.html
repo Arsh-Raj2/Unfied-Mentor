@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App-- Arsh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="split-container">
+        <!-- Weather Section -->
+        <div class="weather-section">
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name" spellcheck="false">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+           
+            <div class="weather-info" style="display: none;">
+                <div class="weather-box">
+                    <img src="" alt="weather icon" class="weather-icon">
+                    <div class="temperature"></div>
+                    <div class="condition"></div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fas fa-water"></i>
+                        <div>
+                            <span></span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fas fa-wind"></i>
+                        <div>
+                            <span></span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="feels-like">
+                        <i class="fas fa-thermometer-half"></i>
+                        <div>
+                            <span></span>
+                            <p>Feels Like</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quotes Section -->
+        <div class="quotes-section">
+            <h2>Weather Quotes</h2>
+            <div class="quote-container">
+                <div class="quote-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="quote-text"></p>
+                    <p class="quote-author"></p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <button class="new-quote-btn" onclick="getNewQuote()">
+                    <i class="fas fa-sync-alt"></i> New Quote
+                </button>
+            </div>
+            <div class="quote-background">
+                <div class="weather-animation"></div>
+            </div>
+        </div>
+    </div>
+    <div class="signature">
+        <span class="made-by">Made By</span>
+        <a href="https://www.linkedin.com/in/arsh-raj-87bb53334/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="name">Arsh Raj</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
